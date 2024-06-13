@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #d0d0d0;
+}
+.header-vet {
+    background-color: #8cc63f;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+.header-container h1 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.header-container h1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.donate-button {
+    margin-left: 20px;
+}
+
+.donate-button .button {
+    background-color: #ff6f61;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.donate-button .button:hover {
+    background-color: #ff4b3a;
+}
+
+/* Slider -- Carrusel*/
+*{
+margin: 0;
+padding: 0;
+font-family: 100%;
+}
+h2{
+    text-align: center;
+    margin-top: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.carrusel{
+    width: 1280px;
+    height: 720px;
+    margin: 50px auto 0;
+    overflow: hidden;
+}
+.carrusel ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: slider 16s infinite alternate ease-in-out;
+}
+.carrusel li{
+    list-style: none;
+    width: 50%;
+    text-align: center;
+
+}
+.carrusel img{
+    width: 100%;
+}
+.carrusel li img{
+    width: 80%;
+
+}
+@keyframes slider {
+    0% {margin-left:0%;}
+    20%{margin-left: 0%;}
+
+    25% {margin-left:-100%;}
+    45%{margin-left: -100%;}
+
+    50% {margin-left:-200%;}
+    70%{margin-left: -200%;}
+
+    75% {margin-left:-300%;}
+    95%{margin-left:-300%;}
+
+}
+
