@@ -1,48 +1,30 @@
-.body {
-    font-family: Arial, sans-serif;
+body {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f8f9fa;
 }
-.login-contenedor {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.main-content {
+    flex: 1;
 }
-.login-contenedor h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
+.container {
+    margin-top: 20px;
 }
-.form-group {
-    margin-bottom: 15px;
-    text-align: left;
+.btn-primary, .btn-success, .btn-outline-secondary {
+    transition: transform 0.2s ease-in-out;
 }
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
+.btn-primary:hover, .btn-success:hover, .btn-outline-secondary:hover {
+    transform: scale(1.05);
 }
-.form-group input {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+.form-control:valid {
+    border-color: #198754;
 }
-.form-group button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+.form-control:invalid {
+    border-color: #dc3545;
+}
+footer {
+    background-color: #343a40;
     color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.form-group button:hover {
-    background-color: #0056b3;
-}
-header {
-    font-size: 1.1rem;
+    text-align: center;
+    padding: 10px 0;
 }
